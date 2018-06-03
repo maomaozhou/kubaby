@@ -1,0 +1,10 @@
+<view class='saveView'>
+  <view class="section">
+  <view class="section__title" wx:for="{{array}}" wx:for-item="item">
+    <button class="view_button" bindtap='saveButtonTip' data-id='{{index}}' >{{item}}</button>
+  </view>
+</view>
+</view>
+<view>
+ 
+</view>

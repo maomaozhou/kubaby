@@ -1,0 +1,14 @@
+/* pages/save/index.wxss */
+.section__title{
+  display: inline-block
+}
+
+.picker{
+  display: inline-block
+}
+.view_button{
+  background-color: yellowgreen;
+   width:70px;
+  margin: 10px;
+  padding: 5px;
+}

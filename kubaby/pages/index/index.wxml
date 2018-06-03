@@ -1,0 +1,29 @@
+<text>Hello World</text>
+<text>当前时间：{{time}}</text>
+
+<text>{{ a === 10? "变量 a 等于10": "变量 a 不等于10"}}</text>
+
+
+<text>结果： {{a+b}}</text>
+
+<view>{{msg}}</view>
+
+<image src='https://www.baidu.com/img/bd_logo1.png?where=super'></image>
+
+
+
+
+<button type="default" hover-class="hover"> 点击button </button>
+
+<view hover-class="hover"> 点击view</view>
+
+
+<button loading="{{loading}}" bindtap="tap">操作</button>
+
+
+<view wx:for = "{{result}}" wx:for-item="itemName" wx:for-index="in">
+<view>
+{{itemName.action}} ,{{itemName.action_value}},{{itemName.ct}}
+
+</view>
+</view>
