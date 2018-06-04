@@ -1,0 +1,27 @@
+<view class='milk_view'>
+
+
+<view class="section">
+  <view class="section__title">日期</view>
+  <picker mode="date" value="{{date}}"  bindchange="bindDateChange">
+    <view class="picker">
+      {{date}}
+    </view>
+  </picker>
+</view>
+  <view class="section">
+  <view class="section__title">时间</view>
+  <picker mode="time" value="{{time}}"  bindchange="bindTimeChange">
+    <view class="picker">
+  {{time}}
+    </view>
+  </picker>
+</view>
+
+
+  <view class='milk_slider'>
+    <view>奶量：</view>
+    <slider max='150' min='10'></slider>
+  </view>
+</view>
+<button type='primary' bindtap='onclick'>确定</button>

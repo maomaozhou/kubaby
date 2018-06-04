@@ -1,0 +1,17 @@
+/* pages/save/milk/index.wxss */
+
+.view_time {
+  display: inline-block;
+}
+
+.view_pick_time {
+  display: inline-block;
+}
+
+/*view{display: inline-block}*/
+
+view {
+width:359px;
+margin:6px;
+padding:9px;
+}

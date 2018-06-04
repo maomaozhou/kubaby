@@ -5,13 +5,13 @@
 	},
 	"setting": {
 		"urlCheck": false,
-		"es6": true,
+		"es6": false,
 		"postcss": true,
 		"minified": true,
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.0.4",
+	"libVersion": "2.0.9",
 	"appid": "wxc5950f29e4897531",
 	"projectname": "small-program",
 	"svr": "",
