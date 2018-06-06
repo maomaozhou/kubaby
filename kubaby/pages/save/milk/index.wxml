@@ -1,27 +1,30 @@
 <view class='milk_view'>
 
+  <template name="time">
 
-<view class="section">
-  <view class="section__title">日期</view>
-  <picker mode="date" value="{{date}}"  bindchange="bindDateChange">
-    <view class="picker">
-      {{date}}
-    </view>
-  </picker>
-</view>
-  <view class="section">
-  <view class="section__title">时间</view>
-  <picker mode="time" value="{{time}}"  bindchange="bindTimeChange">
-    <view class="picker">
-  {{time}}
-    </view>
-  </picker>
-</view>
 
+    <view class="section">
+      <view class="section__title">日期</view>
+      <picker mode="date" value="{{date}}" bindchange="bindDateChange">
+        <view class="picker">
+          {{date}}
+        </view>
+      </picker>
+    </view>
+    <view class="section">
+      <view class="section__title">时间</view>
+      <picker mode="time" value="{{time}}" bindchange="bindTimeChange">
+        <view class="picker">
+          {{time}}
+        </view>
+      </picker>
+    </view>
+  </template>
+  <template is="time" data="{{date,time}}" />
 
   <view class='milk_slider'>
     <view>奶量：</view>
-    <slider max='150' min='10'></slider>
+    <slider max='200' min='0' step='5' bindchange="changeSlider" value='{{slider1}}' show-value='{{slider1}}' />
   </view>
 </view>
-<button type='primary' bindtap='onclick'>确定</button>
+<button type='primary' bindtap='onclick' data-date='{{date}}' data-time="{{time}}"  data-actValue="{{slider1}}" >确定</button>

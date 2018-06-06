@@ -11,7 +11,7 @@
 /*view{display: inline-block}*/
 
 view {
-width:359px;
+width:264px;
 margin:6px;
 padding:9px;
 }

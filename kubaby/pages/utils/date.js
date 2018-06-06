@@ -19,7 +19,7 @@ function getDate(date) {
   var minute = date.getMinutes()
   var second = date.getSeconds()
 
-  return [year, month, day].map(formatNumber).join('/')
+  return [year, month, day].map(formatNumber).join('-')
 }
 
 
